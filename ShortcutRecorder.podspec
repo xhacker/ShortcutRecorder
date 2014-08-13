@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.author       = "Shortcut Recorder contributors"
   s.platform     = :osx, "10.6"
   s.source       = { :git => "https://github.com/xhacker/ShortcutRecorder.git" }
-  s.source_files = "Library/*.{h,m}, PTHotKey/*.{h,m}"
-  s.public_header_files = "Library/*.h, PTHotKey/*.h"
+  s.source_files = "{Library,PTHotKey}/*.{h,m}"
+  s.public_header_files = "{Library,PTHotKey}/*.h"
   s.resources    = "Resources/**/*"
   s.frameworks   = "Cocoa", "Carbon"
   s.requires_arc = true
